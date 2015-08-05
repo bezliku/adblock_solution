@@ -1,0 +1,47 @@
+<html>
+<head>
+<meta charset="UTF8">
+</head>
+<body>
+
+
+<div class="afs_ads"></div>
+<div id="bmone2n-20116.1.24.10"></div>
+<script>  
+(function() {  
+        var tryFallback = function() {  
+            setTimeout(function() {  
+                if(!document.getElementsByClassName) return;  
+                var adBBpremium = document.getElementById('bmone2n-20116.1.24.10'),
+                    ads = document.getElementsByClassName('afs_ads'),  
+                    ad  = ads[ads.length - 1],
+                    imageFallback = document.createElement("img");
+  
+                if(!ad  || ad.offsetWidth === 0 ) {  
+
+                    imageFallback.src = "http://m.natemat.pl/d5e5dcdf5d024a25d97b53c999a1af6c,300,200,0,0.jpg";
+                    adBBpremium.appendChild(imageFallback);
+
+                   ;  
+                    
+                } else {  
+                    ad.style.display = 'none';  
+                }  
+  
+            }, 2000);  
+        }  
+  
+        if(window.addEventListener) {  
+            window.addEventListener('load', tryFallback, false);  
+        } else {  
+            window.attachEvent('onload', tryFallback); //IE  
+        }  
+})();  
+</script> 
+
+
+
+
+
+</body>
+</html>

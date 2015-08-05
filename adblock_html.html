@@ -1,0 +1,44 @@
+<html>
+<head>
+<meta charset="UTF8">
+</head>
+<body>
+
+
+<div class="afs_ads"></div>
+<div id="bmone2n-20116.1.24.10"></div>
+<script>  
+(function() {  
+        var tryFallback = function() {  
+            setTimeout(function() {  
+                if(!document.getElementsByClassName) return;  
+                var adBBpremium = document.getElementById('bmone2n-20116.1.24.10'),
+                    ads = document.getElementsByClassName('afs_ads'),  
+                    ad  = ads[ads.length - 1],
+                    imageFallback = document.createElement("img");
+  
+                if(!ad  || ad.offsetWidth === 0 ) {  
+
+                   adBBpremium.innerHTML='<div style="width: 100%; height: auto; max-width: 980px; max-height: 400px; background-color: grey; color: white; font-size: 45px; margin: 0 auto; text-align: center; vertical-align: middle; line-height: 400px; margin-bottom: 10px;">Nie bądź taki, wyłącz Adblocka :)</div>'; 
+                    
+                } else {  
+                    ad.style.display = 'none';  
+                }  
+  
+            }, 2000);  
+        }  
+  
+        if(window.addEventListener) {  
+            window.addEventListener('load', tryFallback, false);  
+        } else {  
+            window.attachEvent('onload', tryFallback); //IE  
+        }  
+})();  
+</script> 
+
+
+
+
+
+</body>
+</html>
